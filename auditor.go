@@ -23,7 +23,7 @@ type reqAuditor struct {
 	userID  string
 }
 
-func newReqAuditor(auditor Auditor, userID, action string) *reqAuditor {
+func NewReqAuditor(auditor Auditor, userID, action string) *reqAuditor {
 	return &reqAuditor{
 		auditor: auditor,
 		action:  action,
